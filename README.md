@@ -1,73 +1,63 @@
-# React + TypeScript + Vite
+# 💉 Dose Planner Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Planeje doses, protocolos e aplicações de forma simples, visual e profissional.
 
-Currently, two official plugins are available:
+🔗 **Acesse agora:** https://dose-planner.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ⚡ Sobre o projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O **Dose Planner Pro** é uma aplicação web desenvolvida para facilitar o cálculo e organização de protocolos de dosagem.
 
-## Expanding the ESLint configuration
+A ferramenta permite visualizar, ajustar e exportar planejamentos semanais de forma clara, eliminando erros manuais e tornando o processo mais eficiente.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Funcionalidades
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- 📊 Cálculo automático de concentração (mg/ml)
+- 💉 Conversão para unidades baseada na seringa selecionada
+- 📅 Planejamento semanal de doses
+- ➕ Adição dinâmica de semanas
+- ❌ Remoção de semanas com controle inteligente
+- 💾 Salvamento de protocolos (localStorage)
+- ✏️ Edição de protocolos existentes
+- 📄 Exportação em PDF com layout profissional
+- 📱 Interface responsiva (mobile e desktop)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧪 Como funciona
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Informe:
+   - Quantidade total (mg)
+   - Volume (ml)
+   - Dose desejada (mg)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. Escolha o tipo de seringa
+
+3. Monte seu planejamento semanal
+
+4. Salve ou exporte em PDF
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- ⚛️ React
+- 🟦 TypeScript
+- ⚡ Vite
+- 🎨 TailwindCSS
+- 📄 jsPDF
+- 📊 jspdf-autotable
+
+---
+
+## 📦 Instalação local
+
+```bash
+git clone https://github.com/batavera/dose-planner.git
+cd dose-planner
+npm install
+npm run dev
