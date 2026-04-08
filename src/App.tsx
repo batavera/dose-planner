@@ -273,7 +273,7 @@ function App() {
             </span>
           </h1>
 
-          <div className="flex gap-2">
+          <div className="flex flex-col gap-2">
             <input
               value={protocolName}
               onChange={(e) => setProtocolName(e.target.value)}
@@ -281,17 +281,19 @@ function App() {
               className="w-full p-2 rounded bg-slate-700"
             />
 
-            <button onClick={saveProtocol} className="bg-cyan-500 px-4 rounded">
-              {editingIndex !== null ? "Atualizar" : "Salvar"}
-            </button>
+            <div className="flex gap-2">
+              <button onClick={saveProtocol} className="bg-cyan-500 px-4 rounded">
+                {editingIndex !== null ? "Atualizar" : "Salvar"}
+              </button>
 
-            <button onClick={exportProtocol} className="bg-purple-500 px-4 rounded">
-              Exportar
-            </button>
+              <button onClick={exportProtocol} className="bg-purple-500 px-4 rounded">
+                Exportar
+              </button>
 
-            <button onClick={clearAll} className="bg-red-500 px-4 rounded">
-              Limpar
-            </button>
+              <button onClick={clearAll} className="bg-red-500 px-4 rounded">
+                Limpar
+              </button>
+            </div>
           </div>
 
           <input value={mg} onChange={(e) => setMg(formatValue(e.target.value))} placeholder="Quantidade (mg)" className="w-full p-2 rounded bg-slate-700" />
