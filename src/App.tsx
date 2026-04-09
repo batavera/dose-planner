@@ -262,7 +262,19 @@ function App() {
 
   return (
     <div className="min-h-screen bg-slate-900 text-white p-6">
-      <div className="grid lg:grid-cols-3 gap-6">
+
+      <div className="bg-gradient-to-r from-cyan-500 to-blue-500 p-3 sm:p-4 rounded-xl mb-6 text-center">
+        <h1 className="text-xl sm:text-2x1 font-bold text-white">
+          Planeje suas doses com precisão
+        </h1>
+
+        <p className="text-white/80 text-sm mt-1">
+          Organize protocolos, calcule concentrações e exporte tudo em PDF em segundos.
+        </p>
+
+      </div>
+
+      <div id="planner" className="grid lg:grid-cols-3 gap-6">
 
         {/* COLUNA 1 */}
         <div className="bg-slate-800 p-6 rounded-xl space-y-4">
