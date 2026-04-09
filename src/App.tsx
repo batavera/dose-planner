@@ -156,18 +156,15 @@ function App() {
     doc.setFontSize(10)
     doc.text("by batavera", 14, 23)
 
-    // 🔷 RESET COR
     doc.setTextColor(0, 0, 0)
 
     let y = 40
 
-    // 🔷 TÍTULO
     doc.setFontSize(14)
     doc.text(`Protocolo: ${protocolName}`, 14, y)
 
     y += 10
 
-    // 🔷 DADOS
     doc.setFontSize(11)
     doc.text(`Quantidade: ${mg} mg`, 14, y)
     y += 6
@@ -194,7 +191,7 @@ function App() {
         fontSize: 10,
       },
       headStyles: {
-        fillColor: [34, 197, 94], // verde bonito
+        fillColor: [34, 197, 94],
         textColor: 255,
       },
       alternateRowStyles: {
